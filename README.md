@@ -1,5 +1,5 @@
 # Platform
-Binarypace platform is use to create End to end data driven analytical approach the big application.
+Binarypace platform is use to create end to end data driven analytical alogrithm to any web application.
 
 
 Definition : 
