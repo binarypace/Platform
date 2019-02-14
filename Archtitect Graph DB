@@ -1,0 +1,46 @@
+Archtitect Graph DB 
+
+digraph G {
+
+	subgraph cluster_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+		File1 -> FORMATTER -> LOADER -> STAGEFile1->ContextReporting1;
+               LOADER -> STAGEFile2->ContextReporting1;
+  LOADER -> STAGEFile3->ContextReporting1;
+  LOADER -> STAGEFileN->ContextReporting1;
+		label = "Data Staging #1";
+	}
+
+	subgraph cluster_1 {
+		node [style=filled];
+	  STAGEFileN->PHIMasker -> ScrubFileN->ContextReporting2;
+		label = "NonPHIData Scrubbing #2";
+		color=blue
+	}
+
+	subgraph cluster_3{
+		node [style=filled];
+	 ScrubFileN ->HealthcareRules->HCRuleFileN->ContextReporting3;
+		label = "Healthcare Modeling #3";
+		color=Orange
+	}
+
+subgraph cluster_2 {
+		node [style=filled];
+	  ScrubFileN ->File1OpenAPI_1Nonphi;
+HCRuleFileN->File1OpenAPI_1HCR;
+		label = "OpenAPI#4";
+		color=green
+	}
+
+	start -> File1;
+
+	File1OpenAPI_1Nonphi -> end;
+		File1OpenAPI_1HCR -> end;
+
+
+	start [shape=Mdiamond];
+	end [shape=Msquare];
+}
