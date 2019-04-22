@@ -1,13 +1,10 @@
 # Platform
-Binarypace platform is use to create end to end data driven analytical alogrithm to any web application.
+Binarypace platform is use to create end to end data driven analytical alogrithm to any data application needs.
 
-Binarypace : Repository name 
 
-Git : https://github.com/binarypace/Platform
+Platform idea :   A featured based loosely couple REST API Driven platform to support any startup data needs along with leading industrial data needs  
 
-Platform idea :   A featured based loosely couple REST API Driven platform to support small startup data needs to leading industrial trends 
-
-IDEA : 
+Keyuse Case : 
 - [ ] Extendable Multi-tendency framework to provide secure data needs for poc/sales/non-prod environment IT needs
 
 Goals :
@@ -28,18 +25,19 @@ Goals :
 Simpified Architect : 
 ￼
 
-
-Road Maps
+MVP Road Maps
 - [ ] DeID/DataMask/dataStrub
-- [ ] Analytics Engine builder
+- [ ] Analytics Engine builder (tensorflowjs)
 
-Recommended Technology : 
+ Dependency Technology : 
 - [ ] Secure IT on AWS /Azure Cloud 
-- [ ] Backend : RDMS(PostGres) , Documentation DB(Mongo) and Graph DB(Neo4j)
+- [ ] Backend : RDMS(PostGres) , Documentation DB(Mongo) and Graph DB(Neo4j),python 3.7 
 - [ ] Business logic —Graph DB
 - [ ] UI —>Bootstraps or whatever works 
 
-Key Reference 
+
+
+Reference 
 
 Definition : 
 http://mask-me.net/datamaskingwiki/wiki/28/de-identification-vs-data-masking
