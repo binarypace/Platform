@@ -1,0 +1,30 @@
+
+git clone https://github.com/binarypace/Platform.git 
+git pull
+
+
+
+
+CheatSheet to copy to local  : 
+
+git clone github_url local_directory
+<Value> git clone https://github.com/binarypace/Platform.git 
+
+pwd 
+/Users/prakashchandra/binarypace/Platform
+
+mkdir Platform
+cd Platform/
+vi README.md 
+# To Edit --->>Update and hit !Q
+
+#Newly created local 
+git add --all 
+git status 
+git commit -m 'Updated README git'
+git push 
+
+#Sync to local 
+git pull 
+
+
