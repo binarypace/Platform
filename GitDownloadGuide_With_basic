@@ -4,7 +4,7 @@ git pull
 
 
 Sync from Local to Git : 
-Naviate to local git
+Navigate to local path git
 cd ~/Users/prakashchandra/binarypace/Platform
 ls
 git init
