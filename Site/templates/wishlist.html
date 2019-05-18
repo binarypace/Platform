@@ -1,0 +1,11 @@
+<h1> THIS IS WISH LIST </h1>
+<!--<ul>
+	<li> WISH_1 </li>
+	<li> WISH 2  </li>
+</ul>	-->
+
+<ul>
+	{% for wishlistModel in all_wish %}
+	<li> {{ wishlistModel.content }} </li>
+	{% endfor %}
+</ul>	
